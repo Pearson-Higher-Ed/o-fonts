@@ -1,0 +1,45 @@
+////
+/// @group o-he-fonts
+/// @link http://registry.origami.pearsoned.com/components/o-he-fonts
+////
+
+/// Path to the assets
+///
+/// @type String
+$o-he-fonts-path: '//build.origami.pearsoned.com/files/o-he-fonts-assets@1.0.0/' !default;
+
+/// Silent mode
+///
+/// @type Bool
+$o-he-fonts-is-silent: true !default;
+
+/// Font families
+///
+/// @type Map
+$o-he-fonts-families: (
+	HelveticaNeue: (
+		font-family: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+	)
+) !default;
+
+/// Human-readable Font-weights
+///
+/// @access private
+///
+/// @type Map
+$_o-he-fonts-weights: (
+	'thin':       100,
+	'light':      200,
+	'regular':    400,
+	'normal':     400,
+	'medium':     500,
+	'semibold':   600,
+	'bold':       700,
+	'black':      800,
+) !default;
+
+/// Map of families and styles which have already been included
+/// Used to avoid declarations from being written multiple times in the CSS output
+///
+/// @access private
+$_o-he-fonts-families-included: () !default;

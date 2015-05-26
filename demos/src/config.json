@@ -1,0 +1,12 @@
+{
+    "options": {
+        "template": "demos/src/family.mustache",
+        "sass": "demos/src/demo.scss"
+    },
+    "demos": [
+        {
+            "name": "helveticaneue",
+            "data": { "font": "helveticaneue" }
+        }
+    ]
+}
