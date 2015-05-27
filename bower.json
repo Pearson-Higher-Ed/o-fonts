@@ -1,11 +1,17 @@
 {
-    "name": "o-he-fonts",
-    "main": ["main.scss"],
-    "ignore": [
-      "examples",
-      "test",
-      "scripts",
-      ".gitignore"
-    ],
-    "license": "MIT"
+  "name": "o-he-fonts",
+  "main": [
+    "main.scss"
+  ],
+  "ignore": [
+    "examples",
+    "test",
+    "scripts",
+    ".gitignore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarmour/o-he-fonts.git"
+  },
+  "license": "MIT"
 }
