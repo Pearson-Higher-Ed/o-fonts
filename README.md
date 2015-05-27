@@ -92,7 +92,7 @@ $sans-serif: oFontsGetFontFamilyWithFallbacks(HelveticaNeue);
 
 ## Contribute (*adding new variants*)
 
-Note: font files are contained in a separate, private repository ([o-he-fonts-assets](http://git.svc.ft.com/projects/ORIG/repos/o-fonts-assets/)).
+Note: font files are contained in a separate, private repository ([o-he-fonts-assets](https://devops-tools.pearson.com/stash/projects/ORC/repos/o-he-fonts-assets/)).
 
 Open `src/scss/_variables.scss` in a text editor. Add the font family name (if it's an entirely new family) and the variant styles to the `$o-he-fonts-families` map:
 
