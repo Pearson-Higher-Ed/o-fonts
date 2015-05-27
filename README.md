@@ -124,3 +124,7 @@ And a new entry in `demos/src/demo.scss`:
 	font-family: oFontsGetFontFamilyWithFallback(BentonSans);
 }
 ```
+
+## License
+
+This software is published by Pearson Education under the [MIT license](http://opensource.org/licenses/MIT).

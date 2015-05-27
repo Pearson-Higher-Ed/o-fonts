@@ -1,5 +1,6 @@
 {
     "name": "o-he-fonts",
     "main": ["main.scss"],
-    "ignore": [""]
+    "ignore": [""],
+    "license": "MIT"
 }
