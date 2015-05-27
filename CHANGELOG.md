@@ -1,3 +1,12 @@
+<a name"0.0.2"></a>
+### 0.0.2 (2015-05-27)
+
+
+#### Bug Fixes
+
+* HelveticaNeue definition ([29b7d284](https://github.com/aarmour/o-he-fonts/commit/29b7d284))
+
+
 <a name"0.0.1"></a>
 ### 0.0.1 (2015-05-27)
 
