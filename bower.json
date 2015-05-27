@@ -1,6 +1,11 @@
 {
     "name": "o-he-fonts",
     "main": ["main.scss"],
-    "ignore": [""],
+    "ignore": [
+      "examples",
+      "test",
+      "scripts",
+      ".gitignore"
+    ],
     "license": "MIT"
 }

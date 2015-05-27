@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+// TODO: extract this out, possibly as a task in origami-build-tools
+
+var fs = require('fs');
+var path = require('path');
+var changelog = require('conventional-changelog');
+
+function main(argv) {
+	var version = argv[0];
+
+	if (!version) {
+		printUsage();
+		process.exit(1);
+	}
+
+	var cwd = process.cwd();
+	var repository = getRepositoryUrl(cwd);
+
+	changelog({
+		repository: repository,
+		version: version
+	}, function handleLog(error, log) {
+		if (error) throw error;
+
+		fs.writeFileSync(path.join(cwd, 'CHANGELOG.md'), log);
+	});
+}
+
+function printUsage() {
+	console.log('usage: changelog VERSION');
+}
+
+function getRepositoryUrl(cwd) {
+	var repositoryUrl = (require(path.join(cwd, 'bower.json')).repository || {}).url;
+
+	if (!repositoryUrl) throw new Error('bower.json is missing repository url');
+
+	repositoryUrl = repositoryUrl.replace(/\.git$/, '');
+
+	return repositoryUrl;
+}
+
+main(process.argv.slice(2));
