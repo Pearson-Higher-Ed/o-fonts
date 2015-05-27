@@ -30,7 +30,7 @@ WOFF is supported in IE 9+, Chrome, Firefox, iOS 5+, Android 4.4+.
 
 The current supported font families:
 
-* Helvetica Neue, regular
+* HelveticaNeue, regular
 
 ## Advanced usage<a name="advanced"></a>
 
@@ -61,7 +61,7 @@ Compiles to:
 
 ```css
 .my-class {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 ```
 
