@@ -1,3 +1,20 @@
+<a name"0.1.0"></a>
+## 0.1.0 (2015-06-09)
+
+
+#### Features
+
+* rename module to o-fonts ([fabf9052](https://github.com/aarmour/o-fonts/commit/fabf9052))
+
+
+#### Breaking Changes
+
+* the `he-` prefix was removed; the module name is now
+`o-fonts`.
+
+ ([fabf9052](https://github.com/aarmour/o-fonts/commit/fabf9052))
+
+
 <a name"0.0.2"></a>
 ### 0.0.2 (2015-05-27)
 
