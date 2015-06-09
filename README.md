@@ -1,5 +1,4 @@
-
-# o-he-fonts [![Build Status](https://travis-ci.org/aarmour/o-he-fonts.svg)](https://travis-ci.org/aarmour/o-he-fonts)
+# o-fonts [![Build Status](https://travis-ci.org/aarmour/o-fonts.svg)](https://travis-ci.org/aarmour/o-fonts)
 
 Easily include Pearson Higher Ed web fonts in products.
 
@@ -7,7 +6,7 @@ Easily include Pearson Higher Ed web fonts in products.
 
 ```html
 <!-- Load web fonts with @font-face declarations  -->
-<link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-he-fonts@^1" />
+<link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-fonts@^1" />
 
 <!-- Set font families -->
 <style>
@@ -21,7 +20,7 @@ Easily include Pearson Higher Ed web fonts in products.
 
 ## Browser support
 
-`o-he-fonts` loads web fonts in the [WOFF format](http://en.wikipedia.org/wiki/Web_Open_Font_Format).
+`o-fonts` loads web fonts in the [WOFF format](http://en.wikipedia.org/wiki/Web_Open_Font_Format).
 
 WOFF is supported in IE 9+, Chrome, Firefox, iOS 5+, Android 4.4+.
 [View full support table on caniuse.com](http://caniuse.com/#feat=woff).
@@ -38,9 +37,9 @@ The current supported font families:
 
 ```scss
 // @font-face declarations for all available families
-$o-he-fonts-is-silent: false;
+$o-fonts-is-silent: false;
 
-@import 'o-he-fonts/main';
+@import 'o-fonts/main';
 
 // OR, output @font-face declarations for all available families
 // using the mixin instead of turning off silent mode:
@@ -92,12 +91,12 @@ $sans-serif: oFontsGetFontFamilyWithFallbacks(HelveticaNeue);
 
 ## Contribute (*adding new variants*)
 
-Note: font files are contained in a separate, private repository ([o-he-fonts-assets](https://devops-tools.pearson.com/stash/projects/ORC/repos/o-he-fonts-assets/)).
+Note: font files are contained in a separate, private repository ([o-fonts-assets](https://devops-tools.pearson.com/stash/projects/ORC/repos/o-fonts-assets/)).
 
-Open `src/scss/_variables.scss` in a text editor. Add the font family name (if it's an entirely new family) and the variant styles to the `$o-he-fonts-families` map:
+Open `src/scss/_variables.scss` in a text editor. Add the font family name (if it's an entirely new family) and the variant styles to the `$o-fonts-families` map:
 
 ```scss
-$o-he-fonts-families: (
+$o-fonts-families: (
 	BentonSans: (
 		font-family: 'BentonSans, sans-serif',
 		variants: (

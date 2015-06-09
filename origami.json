@@ -2,7 +2,7 @@
     "description": "Web font loader",
     "origamiType": "module",
     "origamiVersion": 1,
-    "support": "https://github.com/aarmour/o-he-fonts/issues",
+    "support": "https://github.com/aarmour/o-fonts/issues",
     "supportStatus": "experimental",
     "demos": [
         {

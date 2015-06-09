@@ -1,22 +1,22 @@
 ////
-/// @group o-he-fonts
-/// @link http://registry.origami.pearsoned.com/components/o-he-fonts
+/// @group o-fonts
+/// @link http://registry.origami.pearsoned.com/components/o-fonts
 ////
 
 /// Path to the assets
 ///
 /// @type String
-$o-he-fonts-path: '//build.origami.pearsoned.com/files/o-he-fonts-assets@1.0.0/' !default;
+$o-fonts-path: '//build.origami.pearsoned.com/files/o-fonts-assets@1.0.0/' !default;
 
 /// Silent mode
 ///
 /// @type Bool
-$o-he-fonts-is-silent: true !default;
+$o-fonts-is-silent: true !default;
 
 /// Font families
 ///
 /// @type Map
-$o-he-fonts-families: (
+$o-fonts-families: (
 	HelveticaNeue: (
 		font-family: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 		variants: (
@@ -30,7 +30,7 @@ $o-he-fonts-families: (
 /// @access private
 ///
 /// @type Map
-$_o-he-fonts-weights: (
+$_o-fonts-weights: (
 	'thin':       100,
 	'light':      200,
 	'regular':    400,
@@ -45,4 +45,4 @@ $_o-he-fonts-weights: (
 /// Used to avoid declarations from being written multiple times in the CSS output
 ///
 /// @access private
-$_o-he-fonts-families-included: () !default;
+$_o-fonts-families-included: () !default;

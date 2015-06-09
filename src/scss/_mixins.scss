@@ -1,6 +1,6 @@
 ////
-/// @group o-he-fonts
-/// @link http://registry.origami.pearsoned.com/components/o-he-fonts
+/// @group o-fonts
+/// @link http://registry.origami.pearsoned.com/components/o-fonts
 ////
 
 /// Font-face declaration sources
@@ -12,8 +12,8 @@
 
 /// Font-face declaration for a given font family
 ///
-/// @param {String} $family - one of $o-he-fonts-families
-/// @param {String} $weight [regular] - one of $_o-he-fonts-weights
+/// @param {String} $family - one of $o-fonts-families
+/// @param {String} $weight [regular] - one of $_o-fonts-weights
 /// @param {String} $style [normal]
 @mixin oFontsInclude($family, $weight: regular, $style: normal) {
 	@if $weight == normal {
@@ -22,11 +22,11 @@
 	$font-exists: false;
 	// Check if the font has already been included
 	// If so, no need to output another @font-face declaration
-	$font-is-already-included: map-has-key($_o-he-fonts-families-included, #{$family}-#{$weight}-#{$style});
+	$font-is-already-included: map-has-key($_o-fonts-families-included, #{$family}-#{$weight}-#{$style});
 
 	@if $font-is-already-included == false {
-		@if map-has-key($o-he-fonts-families, $family) == false {
-			@warn 'Font #{$family} not found. Must be one of $o-he-fonts-families.';
+		@if map-has-key($o-fonts-families, $family) == false {
+			@warn 'Font #{$family} not found. Must be one of $o-fonts-families.';
 		} @else {
 			@if (_oFontsVariantExists($family, $weight, $style)) {
 				$font-exists: true;
@@ -58,14 +58,14 @@
 			}
 
 			// Add to the list of already included families / variants
-			$_o-he-fonts-families-included: map-merge($_o-he-fonts-families-included, (#{$family}-#{$weight}-#{$style}: true)) !global;
+			$_o-fonts-families-included: map-merge($_o-fonts-families-included, (#{$family}-#{$weight}-#{$style}: true)) !global;
 		}
 	}
 }
 
 /// Output @font-face declarations for all the font families
 @mixin oFontsIncludeAll {
-	@each $family, $properties in $o-he-fonts-families {
+	@each $family, $properties in $o-fonts-families {
 		@each $variant in map-get($properties, variants) {
 			@include oFontsInclude($family, map-get($variant, weight), map-get($variant, style));
 		}
