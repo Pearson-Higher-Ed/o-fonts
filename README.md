@@ -1,4 +1,4 @@
-# o-fonts [![Build Status](https://travis-ci.org/aarmour/o-fonts.svg)](https://travis-ci.org/aarmour/o-fonts)
+# o-fonts [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-fonts.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-fonts)
 
 Easily include Pearson Higher Ed web fonts in products.
 
