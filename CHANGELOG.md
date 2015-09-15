@@ -1,3 +1,9 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Pearson-Higher-Ed/o-fonts/compare/v0.2.0...v1.0.0) (2015-09-15)
+
+
+
+
 <a name"0.1.0"></a>
 ## 0.1.0 (2015-06-09)
 
